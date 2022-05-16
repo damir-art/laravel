@@ -23,4 +23,7 @@
 - `Папка домена: \laravel.loc\public`
 - Добавить, Сохранить, ОК
 
-Другой способ переадресации на `\laravel.loc\public` является файл `.htaccess`
+Другой способ переадресации на `\laravel.loc\public` является файл `.htaccess`. Создаём в корне файл `.htaccess` и запишем в нём:
+
+    RewriteEngine On
+    RewriteRule (.*) public/$1
